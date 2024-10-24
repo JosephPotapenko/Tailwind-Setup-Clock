@@ -4,11 +4,8 @@
 @tailwind utilities;
 
 /* Your Awesome Styles */
-* {
-    outline: 1px dotted gray;
-}
 
 body{
-    background-color: darkgoldenrod;
+    background-color: #ba6c65;
     color: bisque;
 }
