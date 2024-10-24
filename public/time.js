@@ -49,7 +49,7 @@ const theClockApp = () => {
     Set DOM Elements
     ************/
     // Set the hours and minutes with a colon
-    hours.innerText = `${gotHours}:${gotMinutes}`;
+    hours.innerText = `${gotHours}:${gotMinutes}:${gotSeconds}`;
     // Set the seconds
     seconds.innerText = gotSeconds;
     // Set AM or PM
