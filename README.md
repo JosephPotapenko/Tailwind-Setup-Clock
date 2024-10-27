@@ -5,3 +5,5 @@ In class assignment we worked on together.
 
 # Sources
 [Boiler Plate](https://colin.manikoth.fun/cscd-378-web-application-development/projects/p3-date-and-time-with-tailwindcss)
+
+[Copilot Referencing For Formatting](https://github.com/features/copilot)
