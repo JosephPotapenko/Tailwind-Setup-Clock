@@ -69,3 +69,37 @@ const allTheMonths = [
   year.innerText = gotYear;
   // Set the day of the week
   dayOfWeek.innerText = allTheDays[gotDayOfWeek];
+
+  // Change Background Image Based on Month
+document.addEventListener("DOMContentLoaded", () => {
+  const monthNames = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+  ];
+  const now = new Date();
+  const month = monthNames[now.getMonth()];
+  document.body.style.backgroundImage = `url('photos/${month}.jpg')`;
+});
+
+document.querySelector(".menu-icon").addEventListener("click", function () {
+  document.querySelector(".dropdown").classList.toggle("show");
+});
+
+document.querySelectorAll(".dropdown-item").forEach((item) => {
+  item.addEventListener("click", function () {
+    document.body.style.backgroundImage = `url(${this.getAttribute(
+      "data-value"
+    )})`;
+    document.querySelector(".dropdown").classList.remove("show");
+  });
+});

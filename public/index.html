@@ -13,11 +13,11 @@
 </head>
 <body class="h-screen flex justify-center items-center drop-shadow-lg ">
 
-    <main>
+    <main class = "overlay">
   
         <!-- Time -->
         <time class="time">
-          <time class="container mx-auto block grid lg:grid-cols-4 md:grid-cols-2 font-serif text-9xl">
+          <time class="container mx-auto block grid lg:grid-cols-4 md:grid-cols-2 font-sans text-9xl">
   
             <data class="hours block">HH</data>
             <data class="minutes block">MM</data>
@@ -28,14 +28,34 @@
       
           
         <!-- Date -->
-        <time class="container mx-auto block grid lg:grid-cols-4 md:grid-cols-2 font-serif text-4xl ">
-          <data class="month text-yellow-900 flex justify-center items-center">Month</data>
-          <data class="dayOfMonth text-yellow-800 flex justify-center items-center">00</data>
-          <data class="year text-yellow-800 flex justify-center items-center">0000</data>
-          <data class="dayOfWeek text-red-900 flex justify-center items-center">SMTWTFS</data>
+        <time class="container mx-auto block grid lg:grid-cols-4 md:grid-cols-2 font-mono text-4xl ">
+          <data class="month  flex justify-center items-center">Month</data>
+          <data class="dayOfMonth  flex justify-center items-center">00</data>
+          <data class="year  flex justify-center items-center">0000</data>
+          <data class="dayOfWeek  flex justify-center items-center">SMTWTFS</data>
         </time>
       
       </main>
+      <div class="menu">
+        <img src="photos/menu.png" alt="Menu" class="menu-icon">
+        <div class="dropdown">
+            <div class="dropdown-content">
+                <div class="dropdown-item" data-value="photos/January.jpg">January</div>
+                <div class="dropdown-item" data-value="photos/February.jpg">February</div>
+                <div class="dropdown-item" data-value="photos/March.jpg">March</div>
+                <div class="dropdown-item" data-value="photos/April.jpg">April</div>
+                <div class="dropdown-item" data-value="photos/May.jpg">May</div>
+                <div class="dropdown-item" data-value="photos/June.jpg">June</div>
+                <div class="dropdown-item" data-value="photos/July.jpg">July</div>
+                <div class="dropdown-item" data-value="photos/August.jpg">August</div>
+                <div class="dropdown-item" data-value="photos/September.jpg">September</div>
+                <div class="dropdown-item" data-value="photos/October.jpg">October</div>
+                <div class="dropdown-item" data-value="photos/November.jpg">November</div>
+                <div class="dropdown-item" data-value="photos/December.jpg">December</div>
+                <a class = "dropdown-item" style = "text-decoration: none; font-weight: 700;" href="https://josephpotapenko.github.io">Visit Me</a>
+            </div>
+        </div>
+    </div>
     
 </body>
 </html>
